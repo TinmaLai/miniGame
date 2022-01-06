@@ -1,0 +1,17 @@
+body{
+	/*background-color: #ffd4e3;*/
+}
+.gift-home{
+	/*animation: gift-rotation 1s infinite linear;*/
+	-webkit-transform: rotate(150deg);
+	width: 500px;
+}
+
+@keyframes gift-rotation{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(359deg);
+	}
+}

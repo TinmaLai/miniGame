@@ -1,0 +1,33 @@
+- flick chuột để lấy quà
+- đổ xúc sắc
+var h1 = document.getElementsByTagName('h1')[0];
+		var randomNumber = Math.floor(Math.random() * 5 + 1);
+		var span = document.getElementsByTagName('span')[0];
+		var score = parseInt(span.innerText);
+		// h1.innerText = randomNumber;
+		function roll(){
+			randomNumber = Math.floor(Math.random() * 5+ 1);
+			// h1.innerText = randomNumber;
+		}
+		function chan(){
+			if(randomNumber % 2 == 0){
+				h1.innerText = "CHẴN";
+				score += randomNumber;
+			} else {
+				h1.innerText = "LẺ";
+				score -= randomNumber;
+			}
+			span.innerText = score;
+			roll();
+		}
+		function le(){
+			if(randomNumber % 2 != 0){
+				h1.innerText ="LẺ";
+				score += randomNumber;
+			} else {
+				h1.innerText = "CHẴN";
+				 score -= randomNumber;
+			}
+			span.innerText = score;
+			roll();
+		}

@@ -1,0 +1,2 @@
+- thêm sound clap(css,getElementClass,clap.play()) ở game 3, thêm textarea ở win alert'
+- thêm file nhạc manydice.wav
